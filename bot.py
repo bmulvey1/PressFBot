@@ -16,16 +16,16 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    number = random.randint(0,999)
+    number = random.randint(0, 999)
     if message.content.find('F') != -1:
 
         if str(message.author) == "DJ Mitch#4397" or str(message.author) == "PressFBot#3434":
             pass
         else:
 
-            await client.send_message(message.channel, 'Press F to pay respects')
+            await message.channel.send('Press F to pay respects')
     elif number == 0:
-        await client.send_message(message.channel, 'Press F to pay respects')
+        await message.channel.send('Press F to pay respects')
 
 
 client.run(conf.key)
