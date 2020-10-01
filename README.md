@@ -1,4 +1,3 @@
-PressFBot
 # PressFBot
 *Press F to pay respects*
 
