@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
+
 import discord
 import conf
 import random
 
-
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
 
 
 @client.event
